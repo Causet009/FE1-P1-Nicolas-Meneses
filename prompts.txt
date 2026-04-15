@@ -1,0 +1,3 @@
+1.Crea Un sitio web para un evento tecnologico que busca atraer estudiantes, profesionales y publico que interese en la tecnologia quiero que este evento se llama ciencias de la teconologia y que contenga secciones
+
+2.mejora el diseño usando [colores]+[estilo]+[orden] que sea un color llamativo

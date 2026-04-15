@@ -1,10 +1,165 @@
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-header { background: #222; color: #fff; padding: 20px 0; text-align: center; }
-nav a { color: #fff; margin: 0 15px; text-decoration: none; }
-.container { max-width: 900px; margin: 30px auto; background: #fff; padding: 20px; border-radius: 8px; }
-section { margin-bottom: 40px; }
-.ponente, .taller { display: inline-block; width: 200px; margin: 10px; text-align: center; vertical-align: top; }
-form { display: flex; flex-direction: column; max-width: 400px; margin: 0 auto; }
-input, textarea { margin: 8px 0; padding: 8px; border-radius: 4px; border: 1px solid #ccc; }
-button { background: #222; color: #fff; padding: 10px; border: none; border-radius: 4px; cursor: pointer; }
-footer { background: #222; color: #fff; text-align: center; padding: 15px 0; margin-top: 30px; }
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #7F53AC 0%, #647DEE 100%);
+    color: #222;
+}
+
+header {
+    background: #4b306a;
+    color: #fff;
+    padding: 30px 0 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 18px;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background: #ff9100;
+    color: #fff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto 30px auto;
+    background: #fff;
+    padding: 32px 28px;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+section {
+    margin-bottom: 48px;
+}
+
+section h2 {
+    color: #7F53AC;
+    margin-bottom: 18px;
+    font-size: 2em;
+    border-left: 5px solid #ff9100;
+    padding-left: 12px;
+}
+
+.ponente, .taller {
+    display: inline-block;
+    width: 260px;
+    margin: 16px 18px 16px 0;
+    background: #f6f9fc;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-align: center;
+    vertical-align: top;
+    padding: 18px 10px 12px 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ponente:hover, .taller:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(127,83,172,0.13);
+}
+
+.ponente img {
+    width: 90px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #647DEE;
+}
+
+.taller h3 {
+    color: #ff9100;
+    margin-bottom: 8px;
+}
+
+ul {
+    padding-left: 22px;
+    margin-bottom: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+    margin: 0 auto;
+    background: #f6f9fc;
+    padding: 18px 20px 14px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #b3c6e0;
+    font-size: 1em;
+    background: #fff;
+    transition: border 0.2s;
+}
+
+input:focus, textarea:focus {
+    border: 1.5px solid #7F53AC;
+    outline: none;
+}
+
+button {
+    background: linear-gradient(90deg, #ff9100 0%, #ffb347 100%);
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(255,145,0,0.10);
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ffb347 0%, #ff9100 100%);
+    transform: scale(1.04);
+}
+
+footer {
+    background: #4b306a;
+    color: #fff;
+    text-align: center;
+    padding: 22px 0 10px 0;
+    margin-top: 40px;
+    border-radius: 0 0 12px 12px;
+    font-size: 1em;
+}
+
+footer a {
+    color: #ff9100;
+    text-decoration: underline;
+    margin: 0 4px;
+}
+
+@media (max-width: 900px) {
+    .container { padding: 12px 4vw; }
+    .ponente, .taller { width: 90%; margin: 14px auto; display: block; }
+}
