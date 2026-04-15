@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
@@ -159,7 +160,132 @@ footer a {
     margin: 0 4px;
 }
 
+/* Responsive para tablets */
 @media (max-width: 900px) {
     .container { padding: 12px 4vw; }
     .ponente, .taller { width: 90%; margin: 14px auto; display: block; }
+}
+
+/* Responsive para tablets y móviles */
+@media (max-width: 700px) {
+    body {
+        font-size: 1em;
+        padding: 0;
+    }
+    header h1 {
+        font-size: 1.5em;
+    }
+    nav {
+        margin-top: 6px;
+    }
+    nav a {
+        display: block;
+        margin: 8px 0;
+        font-size: 1.1em;
+        padding: 8px 0;
+    }
+    .container {
+        padding: 10px 2vw;
+        margin: 20px auto 20px auto;
+    }
+    section h2 {
+        font-size: 1.3em;
+        padding-left: 8px;
+    }
+    .ponente, .taller {
+        width: 98%;
+        margin: 12px auto;
+        display: block;
+        padding: 14px 6px 10px 6px;
+    }
+    form {
+        padding: 12px 8px 10px 8px;
+        max-width: 98vw;
+    }
+}
+
+/* Responsive para móviles pequeños */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.98em;
+    }
+    header {
+        padding: 18px 0 12px 0;
+    }
+    header h1 {
+        font-size: 1.1em;
+        letter-spacing: 1px;
+    }
+    .container {
+        padding: 4px 1vw;
+        margin: 10px auto 10px auto;
+    }
+    section h2 {
+        font-size: 1em;
+        padding-left: 6px;
+    }
+    .ponente img {
+        width: 64px;
+    }
+    button {
+        font-size: 1em;
+        padding: 10px;
+    }
+    footer {
+        font-size: 0.95em;
+        padding: 14px 0 8px 0;
+    }
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.card {
+    background: #ff9800; /* Naranja */
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 24px 16px;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.card:hover {
+    background: #fb8c00; /* Naranja más oscuro */
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(127,83,172,0.13);
+}
+
+.card-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+/* Responsive para tablets */
+@media (max-width: 900px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+        margin-bottom: 18px;
+    }
+}
+
+/* Responsive para móviles */
+@media (max-width: 700px) {
+    .card {
+        width: 98%;
+        padding: 14px 6px;
+    }
+    .card-icon {
+        font-size: 36px;
+    }
 }
