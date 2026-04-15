@@ -1,3 +1,20 @@
 1.Crea Un sitio web para un evento tecnologico que busca atraer estudiantes, profesionales y publico que interese en la tecnologia quiero que este evento se llama ciencias de la teconologia y que contenga secciones
+-El proposito de este lo use para iniciar una pagina web que contenga lo que es un espacio tecnologico y poder avanzar en ella.
+-util
 
 2.mejora el diseño usando [colores]+[estilo]+[orden] que sea un color llamativo
+-use este prompts para mejorar el diseño de la pagina web ya que estaba apagada y no se veia llamativa
+-util
+
+3.Agrega una sección llamada "Beneficios de asistir" antes del registro. Incluye una lista con:
+Certificado de participación Networking con expertos Acceso a materiales exclusivos y un lado para preguntas frecuentes
+-quise cambiar un poco lo que son los puntos que habian y añadi lo que fueron numero de contactos y los beneficios que pueda tener la  pagina web
+-util
+
+4.haz la pagina responsive para que  se ajuste bien  a distintos dispositivos moviles
+-lo utilice para que al abrir la pagina web en distinto dispositivo movil se vea de la mejor manera y asi se pueda leer mejor o usar mejor.
+-util
+
+5.Crea una sección de tarjetas (cards) para destacar las actividades principales del evento "Ciencias de la Tecnología". Cada tarjeta debe tener un ícono grande, un título y una breve descripción. Usa colores llamativos (como naranja), bordes redondeados y sombras suaves. El diseño debe ser moderno, atractivo y responsive, adaptándose bien a dispositivos móviles y escritorio. Al pasar el mouse sobre una tarjeta, debe cambiar ligeramente el color de fondo y elevarse con una sombra más intensa.
+-lo utilice para que me ayudara a crear las cards con el proposito que tengan un fondo naranjo y llamativo
+-util
