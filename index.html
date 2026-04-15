@@ -47,49 +47,64 @@
             </div>
             <div class="ponente">
                 <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Ponente 3" style="width:100px; border-radius:50%;">
-                <p><strong>Ing. Juan Gómez</strong><br>Emprendedor Tech</p>
+                <p><strong>Ing. Carlos Soto</strong><br>Especialista en Ciberseguridad</p>
             </div>
         </section>
         <section id="talleres">
             <h2>Talleres</h2>
-            <div class="taller">
-                <h3>Introducción a la Robótica</h3>
-                <p>Aprende los conceptos básicos y construye tu primer robot.</p>
-            </div>
-            <div class="taller">
-                <h3>Desarrollo de Apps Móviles</h3>
-                <p>Crea aplicaciones móviles desde cero con expertos.</p>
-            </div>
-            <div class="taller">
-                <h3>Ciberseguridad para Todos</h3>
-                <p>Protege tu información y conoce buenas prácticas.</p>
+            <ul>
+                <li>Desarrollo de Apps Móviles - 10:00 a 12:00</li>
+                <li>Introducción a la Robótica - 13:00 a 15:00</li>
+                <li>Machine Learning para principiantes - 15:30 a 17:30</li>
+            </ul>
+        </section>
+        <section id="beneficios">
+            <div style="display: flex; flex-wrap: wrap; gap: 32px;">
+                <div style="flex: 1 1 260px; min-width: 260px;">
+                    <h2>Beneficios de asistir</h2>
+                    <ul>
+                        <li>Certificado de participación</li>
+                        <li>Networking con expertos</li>
+                        <li>Acceso a materiales exclusivos</li>
+                    </ul>
+                </div>
+                <div style="flex: 1 1 260px; min-width: 260px;">
+                    <h2>Preguntas frecuentes</h2>
+                    <ul>
+                        <li>
+                            <strong>¿El evento tiene costo?</strong><br>
+                            No, la participación es totalmente gratuita.
+                        </li>
+                        <li>
+                            <strong>¿Recibiré un certificado?</strong><br>
+                            Sí, todos los asistentes registrados recibirán un certificado digital.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section id="registro">
             <h2>Registro</h2>
             <form>
-                <input type="text" placeholder="Nombre completo" required>
-                <input type="email" placeholder="Correo electrónico" required>
-                <textarea placeholder="¿Por qué te interesa el evento?" rows="3"></textarea>
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="taller">Selecciona un taller:</label><br>
+                <select id="taller" name="taller">
+                    <option value="apps">Desarrollo de Apps Móviles</option>
+                    <option value="robotica">Introducción a la Robótica</option>
+                    <option value="ml">Machine Learning para principiantes</option>
+                </select><br>
                 <button type="submit">Enviar registro</button>
             </form>
         </section>
         <section id="contacto">
             <h2>Contacto</h2>
-            <form>
-                <input type="text" placeholder="Tu nombre" required>
-                <input type="email" placeholder="Tu correo" required>
-                <textarea placeholder="Mensaje" rows="3" required></textarea>
-                <button type="submit">Enviar mensaje</button>
-            </form>
-            <p>O escríbenos a: <a href="mailto:info@cienciastecnologia.com">info@cienciastecnologia.com</a></p>
+            <p>¿Tienes dudas? Escríbenos a <a href="mailto:evento@cienciastecnologia2026.com">evento@cienciastecnologia2026.com</a> o llama al +56 9 1234 5678.</p>
         </section>
     </div>
     <footer>
-        <p>Contacto: info@cienciastecnologia.com | Síguenos en 
-            <a href="#" style="color:#fff;">Twitter</a>, 
-            <a href="#" style="color:#fff;">Facebook</a>
-        </p>
         <p>&copy; 2026 Ciencias de la Tecnología. Todos los derechos reservados.</p>
     </footer>
 </body>
